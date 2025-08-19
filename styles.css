@@ -1,4 +1,6 @@
-/* Basic modern UI */
+footer {
+  display: none;
+}/* Basic modern UI */
 :root {
   --bg: #0b1220;
   --card: #0f172a;
