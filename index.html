@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart To‑Do Reminders</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="theme-color" content="#0ea5e9" />
+</head>
+<body>
+  <header class="app-header">
+    <h1>✅ Smart To‑Do Reminders</h1>
+    <div id="userBox" class="user-box hidden">
+      <img id="userPhoto" class="avatar" alt="user" />
+      <span id="userName"></span>
+      <button id="logoutBtn" class="btn outline">Logout</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="authSection" class="card centered">
+      <h2>Welcome</h2>
+      <p>Sign in with Google to save your tasks and get reminders.</p>
+      <button id="googleBtn" class="btn primary">Continue with Google</button>
+      <p class="hint">First time? The browser will ask for notification permission.</p>
+    </section>
+
+    <section id="appSection" class="hidden">
+      <div class="card">
+        <h2>Create a Task</h2>
+        <form id="taskForm" class="grid">
+          <label>Task Title
+            <input type="text" id="title" required placeholder="e.g., Submit report" />
+          </label>
+          <label>Due Date & Time
+            <input type="datetime-local" id="due" required />
+          </label>
+          <label>Notes (optional)
+            <input type="text" id="notes" placeholder="Any extra info…" />
+          </label>
+          <button class="btn primary" type="submit">Add Task</button>
+        </form>
+        <div class="perm">
+          <button id="notifyBtn" class="btn">Enable Notifications</button>
+          <span id="permStatus" class="muted"></span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="list-header">
+          <h2>Your Tasks</h2>
+          <div class="filters">
+            <select id="filter">
+              <option value="all">All</option>
+              <option value="pending">Pending</option>
+              <option value="done">Completed</option>
+            </select>
+          </div>
+        </div>
+        <ul id="taskList" class="tasks"></ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="muted center">
+    <small>Made for Final Year Project • Works best as a PWA (Install from browser menu)</small>
+  </footer>
+
+  <!-- Firebase SDKs (Compat for simplicity). Replace with your config in app.js -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.1/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.1/firebase-firestore-compat.js"></script>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
