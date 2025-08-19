@@ -7,7 +7,7 @@ apiKey: "AIzaSyBfs8z_6t4zgTCVVCkqv7cfEDAQzgx4l3o",
   storageBucket: "to-do-list-75f59.firebasestorage.app",
   messagingSenderId: "397431693639",
   appId: "1:397431693639:web:6ebf04625b26827a08ec62",
-  measurementId: "G-F2ZCZFN144"
+ 
 };
 // =============================================================================
 
