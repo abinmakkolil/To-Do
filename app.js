@@ -1,12 +1,13 @@
 // app.js
 // ====== IMPORTANT: Insert your Firebase config below (Step 3 in README) ======
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT_ID.appspot.com",
-  messagingSenderId: "YOUR_SENDER_ID",
-  appId: "YOUR_APP_ID"
+apiKey: "AIzaSyBfs8z_6t4zgTCVVCkqv7cfEDAQzgx4l3o",
+  authDomain: "to-do-list-75f59.firebaseapp.com",
+  projectId: "to-do-list-75f59",
+  storageBucket: "to-do-list-75f59.firebasestorage.app",
+  messagingSenderId: "397431693639",
+  appId: "1:397431693639:web:6ebf04625b26827a08ec62",
+  measurementId: "G-F2ZCZFN144"
 };
 // =============================================================================
 
